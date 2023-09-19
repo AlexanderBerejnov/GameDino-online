@@ -1,6 +1,3 @@
-
-
-
 import pygame 
 pygame.init()
 
@@ -12,11 +9,11 @@ class Game():
         self.clock = pygame.time.Clock()
         self.x_player = 10
         self.y_player = 300
+        
     def monster(self):
         self.window.fill((0, 0, 0))
         x_monster = 500
         pygame.draw.rect(self.window, (255, 255, 255), [x_monster, 400, 25, 25])
-        pygame.display.update()
         if x_monster <= 5:
             x_monster = 500
         else:
